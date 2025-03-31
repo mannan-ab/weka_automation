@@ -10,8 +10,8 @@ import java.util.Random;
 public class Experimenter {
     public static void main(String[] args) throws Exception {
         // Load datasets
-        Instances trainData = DataSource.read("c:\Users\manaa\Downloads\agaricus-lepiota.trainingdata_converted_noisy (1).arff");
-        Instances testData = DataSource.read("c:\Users\manaa\Downloads\agaricus-lepiota.testdata_converted_noisy (1).arff");
+        Instances trainData = DataSource.read("agaricus-lepiota.trainingdata_converted_noisy (1).arff");
+        Instances testData = DataSource.read("cagaricus-lepiota.testdata_converted_noisy (1).arff");
         trainData.setClassIndex(trainData.numAttributes() - 1);
         testData.setClassIndex(testData.numAttributes() - 1);
 
